@@ -1,2 +1,0 @@
-# ennampriv
-priv
