@@ -67,15 +67,20 @@
   </header>
 
   <div class="highlight">
-    <strong>The short version:</strong> Ennam stores everything on your device only.
-    We do not collect, transmit, or share any of your data. We have no servers, no analytics,
-    no ads, and no accounts (in the free version).
+    <strong>The short version:</strong> Ennam is local-first. Your decisions and
+    reflections are stored on your device by default. Optional AI features send a
+    short decision summary to our AI provider only after you opt in. We also use
+    privacy-focused diagnostics and product analytics to keep the app reliable.
   </div>
 
   <h2>1. What data we collect</h2>
-  <p>Ennam collects <strong>no personal data</strong> from you. The app works entirely on
-  your device. All thoughts, decisions, reflections, and insights you record are stored
-  locally in your device's storage and nowhere else.</p>
+  <p>Ennam stores the decisions, reflections, and preferences you enter locally on
+  your device. No account is required for the free local-first experience.</p>
+  <p>If diagnostics or analytics are enabled in your build, Ennam may collect limited
+  technical and product events such as app screens viewed, feature usage, crash reports,
+  device/app metadata, and error details. These events are used to improve reliability
+  and product quality. We do not intentionally send your decision text, reasoning,
+  reflections, or other journal content in analytics events.</p>
 
   <h2>2. How your data is stored</h2>
   <p>All data is encrypted on your device using <strong>AES-256-GCM</strong> encryption
@@ -83,22 +88,32 @@
   device and never leaves it. This means:</p>
   <ul>
     <li>Your thoughts are unreadable to anyone without access to your device</li>
-    <li>We (the developers) cannot read your data — it never reaches us</li>
+    <li>We (the developers) cannot read your local archive</li>
     <li>Uninstalling the app permanently deletes all your data</li>
   </ul>
 
   <h2>3. Third-party services</h2>
-  <p>The free version of Ennam uses <strong>no third-party services</strong>,
-  SDKs, analytics tools, or advertising networks. There is nothing phoning home.</p>
+  <p>Ennam may use the following third-party services:</p>
+  <ul>
+    <li><strong>Sentry</strong> for crash reporting and performance diagnostics</li>
+    <li><strong>PostHog</strong> for privacy-focused product analytics</li>
+    <li><strong>Cloudflare Workers</strong> to proxy optional AI requests and enforce usage limits</li>
+    <li><strong>Groq</strong> to generate optional AI reflection questions when you enable AI Coach</li>
+  </ul>
+  <p>AI Coach is off by default. If you enable it, Ennam sends a brief decision
+  summary, selected choices, and a random device identifier to generate tailored
+  questions and enforce daily usage limits. No account is required and no personal
+  identifier is attached by Ennam.</p>
+  <p>Ennam does not show ads and does not sell your data.</p>
 
   <h2>4. Children's privacy</h2>
   <p>Ennam is not directed at children under the age of 13. We do not knowingly
   collect any information from children under 13.</p>
 
   <h2>5. Data export and deletion</h2>
-  <p>You can export all your data at any time from <strong>Settings → Export all decisions</strong>.
-  To delete your data permanently, simply uninstall the app. All locally stored data is
-  removed when the app is uninstalled.</p>
+  <p>You can export your local decisions and reflections at any time from
+  <strong>Settings → Export all data</strong>. You can delete local data from
+  <strong>Settings → Wipe all data</strong> or by uninstalling the app.</p>
 
   <h2>6. Changes to this policy</h2>
   <p>If we ever introduce features that change how data is handled (such as optional cloud sync),
